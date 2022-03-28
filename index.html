@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Várnagy Elemér | Házi feladat</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="img/strand.jpg.jpg" alt="Strand" width="100%">
+        </header>
+            <aside>
+                <ul>
+                    <li><a href="#balaton">Balaton</a></li>
+                    <li><a href="#szelidito">Tisza-Tó</a></li>
+                    <li><a href="#tiszato">Szelidi-tó</a></li>
+                </ul>
+                <div class="form">
+                <form action="hazi.php" method="POST" enctype="multipart/form-data">
+                    <label for="name">Név:</label>
+                    <br>
+                    <input type="text" id="name" name="name">
+                    <br>
+                    <label for="email">E-Mail:</label>
+                    <br>
+                    <input type="email" id="email" name="email">
+                    <br>
+                    <label for="tel">Telefon:</label>
+                    <br>
+                    <input type="tel" id="tel" name="tel">
+                    <br><br>
+                    <label for="interest">Melyik tó érdekli?</label>
+                    <br>
+                    <select name="select2" size=”1”>
+                        <br>
+                        <option selected value=""></option>
+                        <option value="balaton">Balaton</option>
+                        <option value="tiszato">Tisza-Tó</option>
+                        <option value="szelidito">Szelidi-tó</option>
+                    </select>
+                    <br><br>
+                    <label for="interest">Milyen szállást keres?</label>
+                    <br>
+                    <form>
+                        <input type="checkbox" id="szallas1" name="szallas1" value="szalloda">
+                        <label for="szalllas1"> Szálloda</label><br>
+                        <input type="checkbox" id="szallas2" name="szallas2" value="apartman">
+                        <label for="szalllas2"> Apartman</label><br>
+                        <input type="checkbox" id="szallas3" name="szallas3" value="kemping">
+                        <label for="szalllas3"> Kemping</label>
+                    </form>
+                    <br>
+                    <label for="ellatas">Milyen ellátás legyen?</label>
+                    <br>
+                    <form>
+                        <input type="radio" id="ellatas" name="ellatas" value="full">
+                        <label for="full">Teljes</label><br>
+                        <input type="radio" id="ellatas" name="ellatas" value="halfb">
+                        <label for="halfb">Félpanzió</label><br>
+                        <input type="radio" id="ellatas" name="ellatas" value="brkf">
+                        <label for="brkf">Csak Reggeli</label><br>
+                        <input type="radio" id="ellatas" name="ellatas" value="none">
+                        <label for="none">Nem kérek ellátást</label>
+                    </form>
+                    <br>
+                    <label for="igeny">Egyéb üzenet</label><br />
+                    <textarea name="igeny" id="specialneeds" cols="40" rows="10"
+                        placeholder="Kérem írja ide bármilyen egyéb igényét!"></textarea>
+                    <br><br>
+                        <input type="submit" value="Mehet">
+                </form>
+                </div>
+            </aside>
+        <section class="section1">
+            <img src="img/balaton.jpeg.jpeg" alt="Balaton" width="400px" id="sk">
+            <h2 id="balaton">Balaton</h2>
+            <p>A Balaton és környéke Magyarország legnépszerűbb üdülőhelye, amely vonzó úticél a hazai és külföldi
+                turisták számára egyaránt. Nem véletlenül van így, hiszen vízparti kikapcsolódás, történelmi emlékek,
+                különleges természeti értékek, remek kirándulási lehetőségek várják a látogatókat a "magyar tengernél".
+                Az alábbiakban megpróbáljuk összefoglalni, hogy miért is érdemes felkeresni ezt a régiót. de
+                mindenekelőtt néhány érdekes információ, adat olvasható a tóval kapcsolatban. A közel 10-12 ezer éves
+                Balaton Magyarország és egyben Közép-Európa legnagyobb tava. A tó úgy keletkezett, hogy kb. 30-35 ezer
+                évvel ezelőtt a Föld kőzetburkában található kisebb kőzetlemezek elmozdulásának következtében a
+                térségben süllyedékek, medencék jöttek létre, melyeket ellepett a víz. Legnagyobb táplálója a Zala
+                folyó. Mivel a tónak állandó, természetes kifolyója nem volt, vízszintje az idők során erősen
+                ingadozott; felszíne az eredetihez képest a beletorkolló vízfolyások feltöltő munkája következtében
+                jelentősen csökkent. A víz magasságát ma a Sió-zsilippel szabályozzák, mely a Sió-csatornán keresztül
+                levezeti a vízhozam egy részét.</p>
+        </section>
+        <section class="section2">
+            <img src="img/tiszato.jpeg" alt="Tisza-Tó" width="400px" id="sk">
+            <h2 id="szelidito">Szelidi-tó</h2>
+            <p>A Tisza-tó (1988-ig Kiskörei víztározó) Magyarország második legnagyobb tava és legnagyobb mesterséges
+                tava a Tiszán, az Alföld északi részén. Létrehozásának legfontosabb okai a Kiskörei Vízerőmű
+                működéséhez szükséges egyenletes vízhozam biztosítása volt, valamint az ugyanebben az időszakban,
+                Tiszaújvárosban telepített új Tiszai Hőerőmű működéséhez szükséges magas vízszint biztosítása
+                duzzasztással. Az Alföld északi részén, Heves megye délkeleti szélén, Borsod-Abaúj-Zemplén, Heves és
+                Jász-Nagykun-Szolnok megye határán fekszik. Területe 127 km², melyen mozaikosan váltakoznak a nyílt
+                vízfelületek, szigetek, holtágak, sekély csatornák. Hossza 27 km, átlagos mélysége 1,3 méter,
+                legmélyebb pontján 17 méter. 43 km²-nyi sziget
+                található benne. 1967-1973 között építették fel a Kiskörei Erőművet a duzzasztógáttal a tiszai áradások
+                szabályozása és az Alföld hatékonyabb vízellátása végett. Feltöltése 1978-ban fejeződött be.[2] A
+                mesterséges tó vize egykori holtágakat, vízfolyásokat, legelőket, erdőket, szántóföldeket borított el.
+                Azóta kialakult az ökológiája. Változatos növény- és állatvilág talált benne otthonra. A tó északi
+                partján madárrezervátum is működik. 1999 óta a Hortobágyi Nemzeti Park bemutatóterületeként az UNESCO
+                világörökség része. </p>
+        </section>
+        <section class="section3">
+            <img src="img/szelidito.jpeg" alt="Szelidi-tó" width="400px" id="sk">
+            <h2 id="tiszato">Tisza-Tó</h2>
+            <p>Szelid neve a közeli Várdomb erõdítményével és a török idõk harcaival függhet össze, ugyanis a török
+                csapatok a magyar túlerõt látva, megállásra és kompromisszumokra kényszerültek "megszelidültek" ezen a
+                területen.
+                A tavat a még a Duna vize mélyített ki évezredekkel ezelõtt. Jelenleg 4km hosszú, szélessége átlagosan
+                150-200m között mozog, átlagos vízmélysége 3-4 méter, vize nyáron akár 28°C-ra is felmelegedhet, így
+                fürdõzésre kiválóan alkalmas. A talajból sok nátrium-magnézium-karbonát és nátrium-jodid oldódik ki,
+                ezért már a középkorban sebgyógyításra használták, ma inkább idegrendszeri, hormonális és reumatikus
+                bántalmak kezelésére ajánlják.
+                Vize szagtalan a gyógyfürdõkkel ellentétben, jelenleg még nem minõsített gyógyvíz, ezért üdülõfalu
+                létesült a környezetében. Egy másik legenda szerint Bence vitéz úgy meghajszolta lovait hogy azok patái
+                elvástak. De miután a lovak hosszasan a tó vizében állva ittak sebeik gyorsan rendbe jöttek.
+                Szeliden 2000-ben újították fel a Kastély Szállót, a jövõbeni tervek szerint gyógykezelésekre alkalmas
+                létesítményeket is létrehoznak benne. A kastély egykoriban a kalocsai érsek pihenõ kastélya volt.
+                A Szelidi-tavat 360 hektáros természetvédelmi terület övezi, ami növényi gazdagságával a Kiskunsági
+                Nemzeti Park egyik gyöngyszeme. A tó környékén így kellemes sétákat vagy kerékpártúrákat tehet az
+                idelátogató.
+                A vendégeket egy ingyenesen látogatható szabad strand és egy nagyobb igényesen kialakított fizetõstrand
+                várja. A parton vízibiciklik, csónakok, kenuk, és surfök bérelhetõk, így akár rövidebb vízi túrák is
+                tehetõk. A gyerekeket kiépített játszóterek és egy óriás vízicsúzda várja. A horgászat kedvelõi sem
+                csalódhatnak a tóban amúr, keszeg, kárász, ponty és törpeharcsa rendszeresen akad a horgokra.
+            </p>
+        </section>
+        
+        <footer>
+            <h4>Minden jog fenntartva &copy; 2022 - Prooktatás Bt.</h4>
+        </footer>
+    </div>
+</body>
+
+</html>
